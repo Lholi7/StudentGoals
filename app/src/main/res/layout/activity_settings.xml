@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#99CCFF"
+    tools:context=".SettingsActivity">
+
+    <!-- Add a Toolbar or ActionBar here if needed -->
+
+    <RadioGroup
+        android:id="@+id/themeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp">
+
+        <RadioButton
+            android:id="@+id/lightThemeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light Theme"
+            android:layout_marginBottom="8dp" />
+
+        <RadioButton
+            android:id="@+id/darkThemeRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark Theme"
+            android:layout_marginBottom="16dp" />
+
+        <RadioButton
+            android:id="@+id/followSystemRadioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Follow System"
+            android:layout_marginBottom="16dp" />
+    </RadioGroup>
+
+    <!-- Add other settings options here -->
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

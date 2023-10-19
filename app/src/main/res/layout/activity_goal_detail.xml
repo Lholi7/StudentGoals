@@ -1,0 +1,47 @@
+<!-- GoalDetailActivity.xml -->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#99CCFF"
+    tools:context=".GoalDetailActivity">
+
+    <EditText
+        android:id="@+id/titleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter goal title"
+        android:inputType="text"
+        android:layout_marginBottom="16dp" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleEditText"
+        android:hint="Enter goal description"
+        android:inputType="text"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <CheckBox
+        android:id="@+id/completedCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/descriptionEditText"
+        android:text="Completed"
+        android:layout_marginBottom="16dp" />
+
+    <Button
+        android:id="@+id/saveGoalButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/completedCheckBox"
+        android:layout_centerHorizontal="true"
+        android:text="Save Goal"
+        android:layout_marginTop="16dp" />
+
+</RelativeLayout>
